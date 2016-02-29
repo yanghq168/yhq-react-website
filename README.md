@@ -3,12 +3,15 @@
 > 基于React的珠峰宣传网站
 
 ## 技术栈
+
 ### 工具
 - webpack
 - Babel
+
 ### 语言
 - ES6
 - Less
+
 ### 类库
 - React
 - React-router
