@@ -2,8 +2,19 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 import 'bootstrap/dist/css/bootstrap.css';
-import Main from './containers/Main/Main';
+
+// const appHistory = useRouterHistory( createHashHistory )({
+//   queryKey: false
+// });
 
 let root = document.getElementById('app');
-ReactDOM.render(<Main />, root);
+
+ReactDOM.render(
+    <Router
+      history={browserHistory}
+      routes={routes}>
+    </Router>, root
+);
